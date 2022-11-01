@@ -51,7 +51,7 @@ fun BattleConfigScreen(
     BattleConfigContent(
         config = vm.battleConfigCore,
         friendEntries = supportVm.friends,
-        onExport = { battleConfigExport.launch("${vm.battleConfig.name}.fga") },
+        onExport = { battleConfigExport.launch("${vm.battleConfig.name}.json") },
         onCopy = {
             val id = vm.createCopyAndReturnId(context)
             navigate(BattleConfigDestination.Other(id))

@@ -1,3 +1,10 @@
+# Fork Differences
+This fork was created to fix the issue with using FGA while also using the beta UI Translate patch from TranslateFGO.
+This fork replaces the default for the JP game, so it will not work properly if the patch is not applied.
+I have very little experience programming, an no experience in Kotlin, so this is just my hacky way to get it to work until a better solution exists.
+I've also changed the Battle Config import/export to have a .json extension as .fga doesn't work for some devices. Rename your .fga to .json for older files.
+If any function is broken or not functioning properly due to something I missed in changing the translated images or an update to the UI Translation patch, please let me know or submit a pull request.
+
 # Fate/Grand Automata
 [![CI](https://github.com/MathewSachin/Fate-Grand-Automata/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/MathewSachin/Fate-Grand-Automata/actions)
 

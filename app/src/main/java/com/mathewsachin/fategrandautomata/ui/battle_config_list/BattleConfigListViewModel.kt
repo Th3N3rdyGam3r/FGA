@@ -88,7 +88,7 @@ class BattleConfigListViewModel @Inject constructor(
                 val json = gson.toJson(values)
 
                 try {
-                    dir?.createFile("*/*", "${battleConfig.name}.fga")
+                    dir?.createFile("*/*", "${battleConfig.name}.json")
                         ?.uri
                         ?.let { uri ->
                             resolver.openOutputStream(uri)?.use { outStream ->
